@@ -2,7 +2,7 @@ class Mozart::CLI
 
   def call
     puts ""
-    puts "WELCOME TO THE DESCRIPTION OF SYMPHONIES OF THE WORLDS GREATEST COMPOSER OF ALL TIME!"
+    puts "WELCOME TO THE DESCRIPTION OF SYMPHONIES OF THE WORLD'S GREATEST COMPOSER OF ALL TIME!"
     puts ""
     puts "Would you like to see the list of symphonies by Wolfgang Amadeus Mozart? y/n:"
     input = gets.chomp.downcase
