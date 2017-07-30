@@ -29,9 +29,27 @@ class Mozart::CLI
       start
     end
     symphony = Mozart::Symphony.find(input)
-    puts symphony.name_with_number
+    puts "\t\n"
+    puts symphony.name_with_number.upcase
+    puts "\t\n"
+    puts "\t\t\t\t\t\t================== Description of the Symphony =================="
     puts "\t\n"
     puts symphony.description
+    puts "\t\n"
+    puts "\t\t\t\t\t\t================================================================="
+    puts "\t\n"
+    puts "Would you like to find out more about another symphony? y/n:"
+    input = gets.chomp.downcase
+    if input == "y"
+      start
+    else
+      puts "\t\n"
+      puts "Thank you for your interest! Have a great day, and welcome again in the future!"
+      puts "\t\n"
+      puts "\t\t\t**************************"
+      puts "\t\n"
+    end
+
 
 
   end

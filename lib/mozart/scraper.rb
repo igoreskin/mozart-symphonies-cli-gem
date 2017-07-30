@@ -41,15 +41,14 @@ class Mozart::Scraper
     self.get_symphony_page(url).css("p").text
   end
 
-=begin
-  def scrape_keys
-    self.get_page.css("td").css("a")[0..60].each { |el| puts el.attr("title") }
-  end
+  # The following methods only scrape first 11 elements:
 
-  def scrape_years
-    self.get_page.css("td")[0..60].each { |el| puts el.text }
-  end
-=end
+  # def scrape_keys
+  #   self.get_page.css("td").css("a")[0..60].each { |el| puts el.attr("title") }
+  # end
 
+  # def scrape_years
+  #   self.get_page.css("td")[0..60].each { |el| puts el.text }
+  # end
 
 end
