@@ -2,6 +2,10 @@ require 'pry'
 require 'nokogiri'
 require 'open-uri'
 
-require 'require_all'
+require_relative '../lib/mozart/scraper'
+require_relative '../lib/mozart/symphony'
+require_relative '../lib/mozart/cli'
 
-require_all 'lib'
+
+# require 'require_all'
+# require_all 'lib'
